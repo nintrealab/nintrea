@@ -70,7 +70,7 @@ export default function Index({ posts, globalData }) {
                                         
                                         <div className='pb-3 -mt-6 px-4'>
                                             <div className='flex items-center gap-3 py-2'>
-                                                <h1 className='text-gray-500 font-poppins text-sm'>
+                                                <h1 className='text-gray-500 text-opacity-100 font-poppins text-sm'>
                                                 {post.data.author}
                                                 </h1>
                                                 <div className='w-2 h-2 rounded-full bg-emerald-500'></div>  
@@ -78,12 +78,12 @@ export default function Index({ posts, globalData }) {
                                             <Link 
                                                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`} 
                                                 href={`/posts/[slug]`}>
-                                                <h1 className='text-gray-800 dark:text-gray-300 font-poppins font-medium text-[16px] sm:text-[18px] leading-7 line-clamp-2'>
+                                                <h1 className='text-gray-800 text-opacity-100 dark:text-gray-300 font-poppins font-medium text-[16px] sm:text-[18px] leading-7 line-clamp-2'>
                                                     {post.data.title}
                                                 </h1>
                                             </Link>
                                             <div className='flex items-center gap-3 justify-between'>
-                                                <h1 className='text-gray-500 font-poppins text-[13px]'>
+                                                <h1 className='text-gray-500 text-opacity-100 font-poppins text-[13px]'>
                                                     {post.data.date && (
                                                         <p className="uppercase text-[12px] md:text-xs flex text-gray-400">
                                                             {post.data.date} • 

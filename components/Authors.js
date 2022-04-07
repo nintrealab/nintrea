@@ -1,8 +1,12 @@
-import Ripples from 'react-ripples'
+import {createRipples } from 'react-ripples'
 import Image from 'next/image';
 import { AiFillCheckCircle } from "react-icons/ai";
 import ShareIcon from '../components/icons/ShareIcon'
 export default function Index({ posts, globalData }) {
+    const Ripples = createRipples({
+        color: 'rgba(0,46,86,0.11)',
+        during: 1200,
+    })
     const authors = [
         {
             id:1,

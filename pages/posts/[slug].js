@@ -60,14 +60,14 @@ export default function PostPage({
                     
                     <Image src="https://nintrea.netlify.app/asset/KbachkhmerSVG/kbach-18.SVG" className="rounded-full object-cover" width={170} height={50}/>
 
-                    <div className='p-4 font-battambang  bg-opacity-50 dark:bg-opacity-20 dark:bg-gray-800 bg-gray-200 rounded-md shadow-md max-w-2xl mx-auto'>
+                    <div className='p-4 font-poppins  bg-opacity-50 dark:bg-opacity-20 dark:bg-gray-800 bg-gray-200 rounded-md shadow-md max-w-2xl mx-auto'>
                         {frontMatter.description && (<p className="text-xl mb-4">{frontMatter.description}</p>)}
                     </div>
                 </header>
 
 
                 <main>
-                    <article className="prose-md dark:prose-dark w-full flex flex-col font-battambang max-w-[992px] mx-auto border-2 p-2 border-dashed border-t-0 border-r-0 dark:border-gray-700 rounded-md">
+                    <article className="prose-md dark:prose-dark w-full flex flex-col font-poppins max-w-[992px] mx-auto border-2 p-2 border-dashed border-t-0 border-r-0 dark:border-gray-700 rounded-md">
                         <MDXRemote {...source} components={components} />
                         <div className='grid text-center justify-center pt-3'>
                             <p className='font-poppins font-bold translate-y-1'>Share With ❤</p>
