@@ -11,6 +11,7 @@ export default function Index({ globalData }) {
         <>
             <Header name={globalData.name} />
             <HomeSEO title={globalData.name} description={globalData.blogTitle} />
+            
             <Layout>
                 <GradientBackground variant="large" className="fixed w-full top-20 opacity-40 dark:opacity-60"/>
                 <GradientBackground variant="small" className="absolute w-full bottom-0 opacity-20 dark:opacity-10"/>

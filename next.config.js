@@ -3,6 +3,9 @@ module.exports  = withTM()
 module.exports  = {
     images: {
         domains: [
+            '2.bp.blogspot.com',
+            's.gravatar.com',
+            'www.gfxkh.com',
             'telegra.ph',
             'static01.nyt.com',
             'cdn.filestackcontent.com',

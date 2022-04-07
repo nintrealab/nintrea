@@ -11,7 +11,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 import content from '../../components/frontaid.content.json';
 import Share from '../../components/Share';
 import MobileFooter from '../../components/layouts/MobileFooter'
-
+import GoToTop from '../../components/layouts/GoTop';
 export default function Index({ posts, globalData }) {
     return (
         <>
@@ -78,7 +78,7 @@ export default function Index({ posts, globalData }) {
                                             <Link 
                                                 as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`} 
                                                 href={`/posts/[slug]`}>
-                                                <h1 className='text-gray-800 text-opacity-100 dark:text-gray-300 font-poppins font-medium text-[16px] sm:text-[18px] leading-7 line-clamp-2'>
+                                                <h1 className='text-gray-800 text-opacity-100 dark:text-gray-300 font-poppins font-medium text-[16px] sm:text-[18px] leading-7 line-clamp-1'>
                                                     {post.data.title}
                                                 </h1>
                                             </Link>
@@ -109,6 +109,7 @@ export default function Index({ posts, globalData }) {
                     </ul>
                     <GradientBackground variant="large" className="fixed w-full top-20 opacity-40 dark:opacity-60"/>
                     <GradientBackground variant="small" className="absolute w-full bottom-0 opacity-20 dark:opacity-10"/>
+                    <GoToTop/>
                 </main>
                 <Footer copyrightText={globalData.footerText} />
 
@@ -124,6 +125,5 @@ export default function Index({ posts, globalData }) {
 export function getStaticProps() {
     const posts = getPosts();
     const globalData = getGlobalData();
-
     return { props: { posts, globalData } };
 }

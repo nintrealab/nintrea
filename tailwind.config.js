@@ -15,7 +15,7 @@ module.exports = {
               'dangrek': ['"Dangrek"','cursive','"Roboto"','sans-serif'],
               'kantumruy': ['"Kantumruy"','sans-serif','"Roboto"'],
               'moul': ['"Moul"','cursive','"Roboto"','sans-serif'],
-              'moul-pali': ['"Moulpali"','cursive','"Roboto"','sans-serif'],
+              'moul-pali': ['"Moulpali"','cursive','"Poppins"','sans-serif'],
               'noto-sans-hmer': ['"Noto Sans Khmer"','sans-serif','"Roboto"'],
               'noto-serif-khmer': ['"Noto Serif Khmer"','serif','"Roboto"',''],
               'odor-mean-chey': ['"Odor Mean Chey"','serif','"Roboto"',''],
