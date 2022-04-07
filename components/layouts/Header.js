@@ -5,7 +5,6 @@ import Ripples from 'react-ripples'
 import SunIcon from "../icons/SunIcon";
 import { useRouter } from "next/router";
 import MoonIcon from "../icons/MoonIcon";
-import Authors from '../data/Author'
 import Logo from '../../public/logo.png'
 function ThemeSwitcher() {
     return (
@@ -56,8 +55,6 @@ export default function Header({name}) {
         { title: "eBooks", url: "/ebooks", icon: "#book-open" },
     ];
     const router = useRouter();
-
-    console.log(Authors)
     return (
         <header className={`hidden sm:block w-full backdrop-filter backdrop-blur-md bg-white dark:bg-gray-800 dark:bg-opacity-50 bg-opacity-50 fixed z-10 top-0 trasition ease-in-out duration-500 ${ animateHeader && "shadow-xl"}`}>
             <div

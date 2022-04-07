@@ -19,12 +19,15 @@ export default function Index({ posts, globalData }) {
             <HomeSEO title={globalData.name} description={globalData.blogTitle} />
             <Layout>
                 <main className="w-full px-2">
-                    <div className="text-3xl hidden sm:block lg:text-5xl  blue-[40px] text-center mb-5">
-                        <Image className='rounded-md object-cover w-full' src={content.image} width={1400} height={250}/>
+                    <div className="text-3xl hidden lg:block lg:text-5xl  blue-[40px] text-center mb-5">
+                        <Image className='rounded-md object-cover w-full' src={content.image} width={1400} height={350}/>
+                    </div>
+                    <div className="text-3xl hidden sm:block lg:hidden lg:text-5xl  blue-[40px] text-center mb-5">
+                        <Image className='rounded-md object-cover w-full' src={content.image} width={990} height={250}/>
                     </div>
 
                     <div className="text-3xl block sm:hidden lg:text-5xl text-center mb-5">
-                        <Image className='rounded-md object-cover w-full' src={content.image} width={1000} height={400}/>
+                        <Image className='rounded-md object-cover w-full' src={content.image} width={512} height={250}/>
                     </div>
 
                     <ul className="w-full md:max-w-[1048px] gap-2 sm:gap-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-center items-center">
@@ -44,8 +47,8 @@ export default function Index({ posts, globalData }) {
                                                     alt={post.data.title} 
                                                     src={post.data.img} 
                                                     className="object-cover z-0 rounded-md" 
-                                                    width={712} 
-                                                    height={430}/>
+                                                    width={250} 
+                                                    height={150}/>
                                             </div>
                                         </Link>
                                         <Link 
