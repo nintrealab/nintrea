@@ -32,11 +32,11 @@ export default function PostPage({
 }) {
     if (typeof window !== "undefined") {
         if(window.location.pathname == '/posts/novel'){
-            window.location = '//novel.nintrea.org'
+            window.location = '//novel.nintrea.live'
         }else if(window.location.pathname == '/posts/bedok'){
-            window.location = '//bedok.nintrea.org'
+            window.location = '//bedok.nintrea.live'
         }else if(window.location.pathname  =='/posts/samouth'){
-            window.location = '//sinn.sisamouth.nintrea.org'
+            window.location = '//samouth.nintrea.live'
         }else if(window.location.pathname == '/posts/share'){
             window.location = 'https://nintrea-share.blogspot.com/'
         }
