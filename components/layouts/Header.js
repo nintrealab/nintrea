@@ -53,6 +53,7 @@ export default function Header({name}) {
         { title: "Home", url: "/", icon: " #robot" },
         { title: "Trendings", url: "/posts", icon: "#fire-alt" },
         { title: "eBooks", url: "/ebooks", icon: "#book-open" },
+        { title: "Music", url: "https://samouth.nintrea.live", icon: "#music" },
     ];
     const router = useRouter();
     return (

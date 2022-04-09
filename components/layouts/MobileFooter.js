@@ -46,6 +46,7 @@ export default function Header({name}) {
         { title: "Home", url: "/", icon: "nir #home px-0.5" },
         { title: "Trending", url: "/posts", icon: "nir #fire-alt px-0.5" },
         { title: "eBooks", url: "/ebooks", icon: "nis #book-open px-0.5" },
+        { title: "Music", url: "https://samouth.nintrea.live", icon: "nis #music px-0.5" },
     ];
     const router = useRouter();
     return (
