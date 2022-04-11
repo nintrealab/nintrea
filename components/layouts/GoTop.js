@@ -23,15 +23,13 @@ export default function GoToTop({ posts, globalData }) {
     
     return (
         <>
-            <div className="fixed bg-red-400">
-                <Ripples className=''>
-                    <BiArrowToTop 
-                        title='GoTop'
-                        className="scrollTop fixed text-[#002e56] rounded-full shadow-md transition-all duration-100 hover:scale-105 hover:shadow-xl sm:text-[30px] bottom-5 right-1/2 sm:right-52"
-                        onClick={scrollTop} 
-                        style={{ display: showScroll ? 'block' : 'none'}}/>
-                </Ripples>
-            </div>
+            <Ripples>
+                <BiArrowToTop 
+                    title='GoTop'
+                    className="scrollTop fixed text-[#002e56] rounded-full shadow-md transition-all duration-100 hover:scale-105 hover:shadow-xl -translate-x-1/2 left-1/2 text-[30px] bottom-5 sm:right-52"
+                    onClick={scrollTop} 
+                    style={{ display: showScroll ? 'block' : 'none'}}/>
+            </Ripples>
         </>
 
     );
